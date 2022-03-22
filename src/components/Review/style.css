@@ -19,4 +19,56 @@
   right: 0;
   overflow: auto;
   background-color: var(--Primaray-color);
+  display: grid;
+  place-items: center;
+}
+.review-card {
+  border-radius: 10px;
+  background-color: #fff;
+  max-width: 40vw;
+  
+  padding: 20px;
+  text-align: center;
+}
+
+.img-container img {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  text-align: justify;
+}
+.prev-btn {
+  background-color: lightblue;
+  border: none;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.next-btn {
+  background-color: lightblue;
+  border: none;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.surprice {
+  margin: 10px 0;
+  background-color: orange;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .review-card {
+    max-width: 90vw;
+   
+  }
 }

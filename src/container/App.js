@@ -123,8 +123,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Review/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Review/Main"
+import Main from "../components/ChessBoard/Main"
 function App() {
   return (
     <div>

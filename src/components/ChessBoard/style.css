@@ -1,0 +1,45 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Primaray-color: lightgreen;
+  --secondary-color: #fff;
+}
+.main {
+  /* height: 100%;
+    background-color: var(--Primaray-color); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: var(--Primaray-color);
+  display: grid;
+  place-items: center;
+}
+.chessBox {
+  width: 640px;
+  height: 640px;
+  background-color: var(--secondary-color);
+}
+.white {
+  background-color: #fff;
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding: 33px;
+}
+.black {
+  background-color: black;
+  display: table-cell;
+  width: 80px;
+  height: 80px;
+  float: left;
+  padding: 33px;
+}

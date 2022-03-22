@@ -135,8 +135,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/ChessBoard/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/ChessBoard/Main"
+import Main from "../components/StopWatch/Main"
 function App() {
   return (
     <div>

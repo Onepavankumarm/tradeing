@@ -19,6 +19,7 @@
   right: 0;
   overflow: auto;
   background-color: var(--Primaray-color);
+  
 }
 .birthday {
   height: 100vh;

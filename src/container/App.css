@@ -1,0 +1,21 @@
+.row.content {
+  height: 550px;
+}
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.list-box {
+  border-radius: 7px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+}
+

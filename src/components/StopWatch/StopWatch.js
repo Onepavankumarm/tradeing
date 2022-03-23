@@ -22,20 +22,22 @@ function StopWatch() {
         setactive(true);
         setpause(false)
     }
-    const pauseHandler = () =>{
+    const pauseHandler = () => {
         setpause(!pause);
     }
-    const resetHandler = () =>{
+    const resetHandler = () => {
         setactive(true)
         setTimer(0)
     }
-    
+
     return (
-        <div>
+        <div className='TimerBox'>
             <h1>Timer : {timer}</h1>
-            <button onClick={startHandler}>Start</button>{'    '}
-            <button onClick={pauseHandler}>Pause</button>{'    '}
-            <button onClick={resetHandler}>Reset</button>{'    '}
+           <div className='TimerBoxsub'>
+                <button className='btn' onClick={startHandler}>Start</button>{'    '}
+                <button className='btn' onClick={pauseHandler}>Pause</button>{'    '}
+                <button className='btn' onClick={resetHandler}>Reset</button>{'    '}
+            </div>
         </div>
     )
 }

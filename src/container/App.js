@@ -147,8 +147,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/StopWatch/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/StopWatch/Main"
+import Main from "../components/Toster/Main"
 function App() {
   return (
     <div>

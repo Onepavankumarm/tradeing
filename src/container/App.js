@@ -172,12 +172,36 @@
 // export default App
 
 
+// import React from 'react'
+// import Main from "../components/PopUp/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/Mounting/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/PopUp/Main"
+import MainSub from "../components/Interview_1/MainSub";
 function App() {
   return (
     <div>
-      <Main />
+      <MainSub />
     </div>
   )
 }

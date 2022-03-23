@@ -159,8 +159,21 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Toster/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import Main from "../components/Toster/Main"
+import Main from "../components/PopUp/Main"
 function App() {
   return (
     <div>

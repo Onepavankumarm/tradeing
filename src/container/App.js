@@ -196,12 +196,36 @@
 
 // export default App
 
+// import React from 'react'
+// import MainSub from "../components/Interview_1/MainSub";
+// function App() {
+//   return (
+//     <div>
+//       <MainSub />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/DeBounce/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import MainSub from "../components/Interview_1/MainSub";
+import Main from "../components/Accordion/Main";
 function App() {
   return (
     <div>
-      <MainSub />
+      <Main />
     </div>
   )
 }

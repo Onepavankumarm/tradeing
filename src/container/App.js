@@ -220,8 +220,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Accordion/Main";
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Accordion/Main";
+import Main from "../components/Interview_2/Main"
 function App() {
   return (
     <div>

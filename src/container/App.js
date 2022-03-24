@@ -232,8 +232,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Interview_2/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Interview_2/Main"
+import Main from "../components/CRUD/Main"
 function App() {
   return (
     <div>

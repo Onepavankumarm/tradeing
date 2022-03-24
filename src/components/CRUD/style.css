@@ -1,0 +1,63 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Primaray-color: lightgreen;
+  --secondary-color: #fff;
+}
+.main {
+  /* height: 100%;
+    background-color: var(--Primaray-color); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: var(--Primaray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+}
+
+.form_crud {
+  display: flex;
+}
+.crudBox {
+  width: 50vw;
+  height: 60vh;
+  background-color: aqua;
+ 
+  /* display: flex;
+  justify-content: center; */
+  padding: 20px;
+}
+#submit {
+  background-color: #fff;
+  margin: 0px 10px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+
+}
+.box{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;   
+}
+.form_crud{
+    padding: 12px;
+  
+}

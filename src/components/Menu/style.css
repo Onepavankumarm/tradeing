@@ -1,0 +1,69 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Primaray-color: lightgreen;
+  --secondary-color: #fff;
+}
+.main {
+  /* height: 100%;
+    background-color: var(--Primaray-color); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: var(--Primaray-color);
+
+  /* display: flex;
+
+  justify-content: center; */
+}
+.subMain {
+  display: flex;
+  padding: 20px;
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.pavanButton {
+  padding: 10px 25px;
+}
+hr {
+  background-color: #fff;
+  width: 50%;
+  height: 2px;
+  margin: auto;
+}
+img {
+  /* width: 400px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  display: block;
+}
+.mainBox {
+  width: 100%;
+  background-color: aqua;
+
+  height: 100vh;
+  margin-top: 20px;
+}
+.mainSubBox {
+  width: 49%;
+  /* height: 100px; */
+  float: left;
+  background-color: lightblue;
+  border: 2px solid orange;
+  margin: 5px;
+}

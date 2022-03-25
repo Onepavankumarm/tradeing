@@ -57,10 +57,10 @@ function Main() {
             <div className='crudBox'>
                 <form id="form_crud" onSubmit={!show ? submitHandler : updateHandler}>
                     <div style={{ display: 'flex' }}>
-                        <div>
+                        <div className='forminput'>
                             <input type="text" value={name.firstname} onChange={(e) => setname({ ...name, firstname: e.target.value })} />
                         </div>
-                        <div>
+                        <div className='forminput'>
                             <input type="text" value={name.lastname} onChange={(e) => setname({ ...name, lastname: e.target.value })} />
                         </div>
                         <button id="submit" type='btn'>{!show ? 'add' : 'update'}</button>

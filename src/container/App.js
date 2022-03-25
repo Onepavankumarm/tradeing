@@ -244,8 +244,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/CRUD/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/CRUD/Main"
+import Main from "../components/Menu/Main"
 function App() {
   return (
     <div>

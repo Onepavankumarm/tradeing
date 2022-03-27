@@ -256,8 +256,20 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Menu/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Menu/Main"
+import Main from "../components/Tabs/Main"
 function App() {
   return (
     <div>

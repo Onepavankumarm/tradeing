@@ -1,0 +1,67 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Primaray-color: lightgreen;
+  --secondary-color: #fff;
+}
+.main {
+  /* height: 100%;
+    background-color: var(--Primaray-color); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-color: var(--Primaray-color);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.sectionBox {
+  width: 60vw;
+  background-color: aqua;
+}
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+.underline {
+  height: 2px;
+  width: 10%;
+  border: 2px solid orange;
+  margin: auto;
+}
+.mainContainer {
+  width: 100%;
+  display: flex;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.subContainerone {
+  width: 30%;
+  height: 500px;
+  background-color: aquamarine;
+}
+.subContainertwo {
+  width: 70%;
+  height: 500px;
+  background-color: bisque;
+  padding: 20px;
+}
+.btnlist {
+  padding: 30px;
+}
+.btndisplay {
+  margin: 10px 0px;
+  padding: 10px 3px;
+}
+.Active {
+  background-color: greenyellow;
+}

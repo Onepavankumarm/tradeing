@@ -268,12 +268,37 @@
 
 // export default App
 
-import React from 'react'
-import Main from "../components/Tabs/Main"
+// import React from 'react'
+// import Main from "../components/Tabs/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/Count/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react';
+import Mian from "../components/Slider/Mian";
+
 function App() {
   return (
     <div>
-      <Main />
+      <Mian />
     </div>
   )
 }

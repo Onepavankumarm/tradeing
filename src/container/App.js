@@ -292,13 +292,25 @@
 
 // export default App
 
-import React from 'react';
-import Mian from "../components/Slider/Mian";
+// import React from 'react';
+// import Mian from "../components/Slider/Mian";
 
+// function App() {
+//   return (
+//     <div>
+//       <Mian />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import Main from "../components/Song/Main"
 function App() {
   return (
     <div>
-      <Mian />
+      <Main />
     </div>
   )
 }

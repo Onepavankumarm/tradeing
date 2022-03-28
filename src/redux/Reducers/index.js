@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
-import countReducer from "./countReducuere"
+import countReducer from "./countReducuere";
+import { songList, selectedSong } from "./songReducere"
 const rootReducer = combineReducers({
-    countReducer: countReducer
+    countReducer: countReducer,
+    songList: songList,
+    selectedSong: selectedSong
 });
 
 export default rootReducer;

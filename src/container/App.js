@@ -217,8 +217,7 @@
 //     </div>
 //   )
 // }
-
-// export default App
+//  export default App
 
 // import React from 'react'
 // import Main from "../components/Accordion/Main";
@@ -305,8 +304,32 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Song/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Mian from "../components/Propogation/Mian";
+// function App() {
+//   return (
+//     <div>
+//       <Mian />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Song/Main"
+import Main from "../components/Form/Main";
 function App() {
   return (
     <div>

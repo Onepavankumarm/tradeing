@@ -1,22 +1,14 @@
-let name = {
-    fname: 'pavan',
-    lname: 'kumar'
+function debouncing(cb,d) {
+    let timer;
+    return ()=>{
+        if(timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+            cb()
+        }, d);
+    }
 }
-let getName = function () {
-    console.log(this.fname + ' ' + this.lname);
+function comeonKalavathi() {
+    console.log("Hello kalvathi come on come on kalavathi");
 }
-console.log(getName.call(name));
 
-Function.prototype.MyCall = function(obj,...args){
-    obj.reference= this;
-    obj.reference(...args)
-}
-console.log(getName.MyCall(name));
-
-Function.prototype.MyCall = function(obj,...args){
-    obj.reference= this;
-    obj.reference(...args)
-}
-console.log(getName.apply(name));
-
-
+debouncing(comeonKalavathi,1000)();

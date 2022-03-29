@@ -328,13 +328,24 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/Form/Main";
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/Form/Main";
+import Main from "../components/ParaGenenrater/Main";
+
 function App() {
   return (
-    <div>
-      <Main />
-    </div>
+    <div><Main /></div>
   )
 }
 

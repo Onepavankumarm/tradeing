@@ -351,8 +351,20 @@
 
 // export default App
 
-import React from 'react';
-import Main from '../components/MakeMyTrip/Main';
+// import React from 'react';
+// import Main from '../components/MakeMyTrip/Main';
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import Main from "../components/ByJuse/Main"
 function App() {
   return (
     <div>

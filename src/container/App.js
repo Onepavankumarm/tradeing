@@ -375,12 +375,24 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/APIDEBOUNC/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/APIDEBOUNC/Main"
+import Mian from "../components/ByJu/Mian"
 function App() {
   return (
     <div>
-      <Main />
+      <Mian />
     </div>
   )
 }

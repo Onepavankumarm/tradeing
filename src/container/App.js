@@ -387,13 +387,23 @@
 
 // export default App
 
+// import React from 'react'
+// import Mian from "../components/ByJu/Mian"
+// function App() {
+//   return (
+//     <div>
+//       <Mian />
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Mian from "../components/ByJu/Mian"
+import Main from "../components/HOC/Main"
 function App() {
   return (
-    <div>
-      <Mian />
-    </div>
+    <div><Main /></div>
   )
 }
 

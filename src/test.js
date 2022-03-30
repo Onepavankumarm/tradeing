@@ -1,14 +1,15 @@
-function debouncing(cb,d) {
-    let timer;
-    return ()=>{
-        if(timer) clearTimeout(timer);
-        timer = setTimeout(() => {
-            cb()
-        }, d);
-    }
-}
-function comeonKalavathi() {
-    console.log("Hello kalvathi come on come on kalavathi");
-}
+let array = [1, 2, 3, 4, 5, 6];
+let newArray = array.filter((item) => item > 2);
+console.log(newArray);
 
-debouncing(comeonKalavathi,1000)();
+Array.prototype.myFilter = function(cb){
+    let result = [];
+    for(let i=0;i<this.length;i++){
+        if(cb(this[i],i,this)){
+            result.push(this[i]);
+        }
+    }
+    return result
+}
+let newArray_1 = array.myFilter((item) => item > 2);
+console.log(newArray_1);

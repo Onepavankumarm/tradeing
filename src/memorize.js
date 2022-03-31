@@ -29,3 +29,5 @@ console.timeEnd("t1")
 // const hello = () => console.log("hello how are you")
 // let x = myHoc(hello)
 // console.log(x());
+
+// HOC function map,filter,reduce

@@ -175,3 +175,91 @@
 // }
 // console.log(Anagram("", ""));
 // console.log(Anagram("cat", "tau"));
+
+
+// function twoSum(arr) {
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     for (let j = i + 1; j < arr.length; j++) {
+//     //         if (arr[i] + arr[j] === 0) {
+//     //             return [arr[i], arr[j]]
+//     //         }
+//     //     }
+//     // }
+//     let left = 0;
+//     let right = arr.length-1;
+//     while (left < right) {
+//         let sum = arr[left] + arr[right];
+//         if (sum === 0) {
+//             return [arr[left], arr[right]]
+//         } else if (sum > 0) {
+//             right--;
+//         } else {
+//             left++;
+//         }
+
+//     }
+// }
+// console.log(twoSum([-4, -3, -2, -1, 0, 1, 2, 5]))
+
+// function countUniqueValue(arr) {
+//     let i = 0;
+//     for (let j = i + 1; j < arr.length; j++) {
+//         if (arr[i] !== arr[j]) {
+//             i++;
+//             arr[i] = arr[j]
+//         }
+//     }
+//     return i + 1;
+// }
+// console.log(countUniqueValue([1, 2, 2, 5, 7, 7, 99]))
+
+// function maxSumArray(arr,num) {
+//     let maxSum = 0;
+//     let tempSum = 0;
+//     for(let i=0;i<num;i++){
+//         maxSum = maxSum + arr[i];
+//     }
+//     tempSum = maxSum;
+//     for(let i = num;i<arr.length;i++){
+//         tempSum = tempSum - arr[i-num]+arr[i];
+//         maxSum = Math.max(maxSum,tempSum)
+//     }
+//     return maxSum
+// }
+// console.log(maxSumArray([1,2,5,2,8,1,5],2))
+
+
+// function LinearSearch(arr,key) {
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]===key){
+//             return i
+//         }
+//     }
+//     return -1
+// }
+// console.log(LinearSearch([1,2,3,4,5,6],2))
+
+// function BinarySearch(arr, key) {
+//     return BinarySearchHelper(arr, key, 0, arr.length - 1);
+// }
+// function BinarySearchHelper(arr, key, start, end) {
+//     if (start > end) return false;
+//     let mid = Math.floor((start + end) / 2);
+//     if (arr[mid] === key) {
+//         return mid;
+//     } else if (arr[mid] < key) {
+//         return BinarySearchHelper(arr, key, mid + 1, end);
+//     } else {
+//         return BinarySearchHelper(arr, key, start, mid - 1);
+//     }
+// }
+// console.log(BinarySearch([1, 2, 3, 4, 5, 6], 4))
+
+
+
+// function Factorial(n) {
+//     if(n===1) return 1;
+//     return n * Factorial(n-1);
+// }
+// console.log(Factorial(5));
+

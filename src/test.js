@@ -263,3 +263,7 @@
 // }
 // console.log(Factorial(5));
 
+// function display(...array) {
+//     return array;
+// }
+// console.log(display(1, 2, 3, 4, 5))

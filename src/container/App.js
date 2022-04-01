@@ -399,11 +399,23 @@
 
 // export default App
 
+// import React from 'react'
+// import Main from "../components/HOC/Main"
+// function App() {
+//   return (
+//     <div><Main /></div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Main from "../components/HOC/Main"
+import Mian from "../components/RodeSideCoder/ONE/Mian"
 function App() {
   return (
-    <div><Main /></div>
+    <div>
+      <Mian />
+    </div>
   )
 }
 

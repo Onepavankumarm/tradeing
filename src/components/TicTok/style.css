@@ -1,0 +1,44 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttonMaga {
+  border: 1px solid #999;
+  float: left;
+  font-size: 40px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+}
+
+.customBtn {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  /* padding: 0; */
+  float: left;
+}
+.custombutton {
+  width: 80px;
+  height: 80px;
+  background-color: lightgreen;
+  color: black;
+  font-size: 32px;
+  float: left;
+}
+
+.tostBox{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin: 20px;
+}

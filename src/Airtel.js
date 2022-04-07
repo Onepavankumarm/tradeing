@@ -194,3 +194,12 @@
 //     }
 // }
 // console.log(Amaazon())
+
+
+function foo() {
+    function aem(){return 7;} 
+    return aem();
+    function aem(){return 3;} 
+    function aem(){return 4;} 
+}
+console.log(foo())

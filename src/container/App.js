@@ -409,12 +409,117 @@
 
 // export default App
 
+// import React from 'react'
+// import Mian from "../components/RodeSideCoder/ONE/Mian"
+// function App() {
+//   return (
+//     <div>
+//       <Mian />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/RodeSideCoder/TWO/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/RodeSideCoder/THREE/Main";
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/TicTok/Main"
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from '../components/Interviee_3/Main'
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Main from "../components/Post/Main";
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+//     </div>
+//   )
+// }
+
+// export default App
+
+// testing using jest 
+
+// import React, { useState } from 'react'
+
+// function App() {
+//   const [count, setCount] = useState(0)
+//   return (
+//     <div>
+//       <h1>pavan kumar</h1>
+//       <div id="counterval">{count}</div>
+//       <button id='incbutton' onClick={() => setCount(c => c + 1)}>Increment</button>
+//       <button id='decbutton' onClick={() => setCount(c => c - 1)}>Decrement</button>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Parent from "../components/CallBack/Parent";
+// export const ThemeContext = React.createContext();
+
+// function App() {
+//   return (
+//     <ThemeContext.Provider value={"pavan"}>
+//       <Parent />
+//     </ThemeContext.Provider>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import Mian from "../components/RodeSideCoder/ONE/Mian"
+import MyFilter from "../components/SearchFilter/MyFilter"
 function App() {
   return (
     <div>
-      <Mian />
+      <MyFilter />
     </div>
   )
 }

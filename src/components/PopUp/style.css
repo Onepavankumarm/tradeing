@@ -1,49 +1,29 @@
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --Primaray-color: lightgreen;
-  --secondary-color: #fff;
-}
 .main {
-  /* height: 100%;
-    background-color: var(--Primaray-color); */
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;
-  background-color: var(--Primaray-color);
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.popupMaga {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 70vw;
-  height: 70vh;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 20;
-  padding: 20px;
-  border-radius: 10px;
-}
-.poptext {
-  color: rgb(18, 119, 153);
+  background: green;
 }
 
-.PopUpBox {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.mainBox {
+  width: 400px;
+  text-align: center;
+  z-index: 25;
 }
-.cancel {
-  float: right;
+.popupmaga {
+  position: fixed;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  /*  align-items: center; */
+  background: white;
+  z-index: 50;
+  border-radius: 20px;
+  padding: 20px;
 }

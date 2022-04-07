@@ -7,17 +7,39 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="parent">
-      <li id="html">html</li>
-      <li id="css">css</li>
-      <li id="javascript">javascript</li>
-    </div>
+    <button id="clickMaga">Click</button>
     <script>
-      document.querySelector(".parent").addEventListener("click", (e) => {
-        if (e.target.tagName === "LI") {
-          window.location.href += "#" + e.target.id;
-        }
-      });
+      function Throttling(func, delay) {
+        let prev = 0;
+        return (...args) => {
+          let now = new Date().getTime();
+          if (now - prev > delay) {
+            prev = now;
+            return func(...args);
+          }
+        };
+      }
+
+      document.querySelector("#clickMaga").addEventListener(
+        "click",
+        Throttling(() => {
+          console.log("click maga");
+        }, 1000)
+      );
+
+      function debouncing(cb, d) {
+        let timer;
+        return (...args) => {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(() => {
+            cb(...args);
+          }, d);
+        };
+      }
+      function doSomething(){
+        console.log("do some thing");
+      }
+      debouncing(doSomething,3000)()
     </script>
   </body>
 </html>

@@ -1,22 +1,41 @@
-import React, { useState } from 'react'
-import "./style.css"
-function PopUp() {
-    const [show, setShow] = useState(false)
-    return (
-        <div className='main'>
-            <main className='mainBox'>
-                <h1>Hello pavan preparation</h1>
-                <button onClick={() => setShow(!show)}>popUp</button>
-            </main>
-            {show && (<div className='popupmaga'>
-                <h1>popup maga</h1><h1 onClick={() => setShow(false)}>X</h1>
-            </div>)}
+// import React, { useState } from "react";
+// import "./style.css";
+// function PopUp() {
+//   const [show, setShow] = useState(false);
+//   return (
+//     <div className="main">
+//       <div className="box_1">
+//         <button onClick={() => setShow(!show)}>ClickMaga</button>
+//       </div>
+//       {show && (
+//         <div className="box_2">
+//           <button onClick={() => setShow(false)}>close</button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
 
-        </div>
-    )
-}
+// export default PopUp;
+// import React, { useState } from 'react'
+// import "./style.css"
+// function PopUp() {
+//     const [show, setShow] = useState(false)
+//     return (
+//         <div className='main'>
+//             <main className='mainBox'>
+//                 <h1>Hello pavan preparation</h1>
+//                 <button onClick={() => setShow(!show)}>popUp</button>
+//             </main>
+//             {show && (<div className='popupmaga'>
+//                 <h1>popup maga</h1><h1 onClick={() => setShow(false)}>X</h1>
+//             </div>)}
 
-export default PopUp
+//         </div>
+//     )
+// }
+
+// export default PopUp
 
 // import React, { useState } from 'react'
 

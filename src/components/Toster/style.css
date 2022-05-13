@@ -18,7 +18,7 @@
   bottom: 0;
   right: 0;
   overflow: auto;
-  background-color: var(--Primaray-color);
+  /* background-color: var(--Primaray-color); */
   display: flex;
   justify-content: center;
 }

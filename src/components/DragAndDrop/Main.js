@@ -1,45 +1,48 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef } from "react";
 
 function Main() {
-    const first = useRef();
-    const second = useRef();
-    const [list, setList] = useState(['item1', 'item2', 'item3', 'item4', 'item5']);
-    const dragstart = (e, position) => {
-        first.current = position;
-    }
-    const dragEnter = (e, position) => {
-        second.current = position;
-    }
-    const drag = () => {
-        let data = [...list];
-        let findIndex = data[first.current];
-        data.splice(first.current, 1);
-        data.splice(second.current, 0, findIndex);
-        first.current = null;
-        second.current = null;
-        setList(data)
-    }
-    return (
-        <div>
-            {
-                list && list.map((item, index) => (
-                    <div
-                        draggable
-                        onDragStart={(e) => dragstart(e, index)}
-                        onDragEnter={(e) => dragEnter(e, index)}
-                        onDragEnd={drag}
-                        key={index}
-                        style={{ background: 'orange', margin: '30px', padding: '30px' }}
-                    >
-                        {item}
-                    </div>
-                ))
-            }
+  const first = useRef();
+  const second = useRef();
+  const [list, setList] = useState([
+    "item  1",
+    "item  2",
+    "item  3",
+    "item  4",
+    "item  5",
+  ]);
+  const dragStart = (e, position) => {
+    first.current = position;
+  };
+  const dragEnd = (e, position) => {
+    second.current = position;
+  };
+  const drag = () => {
+    const data = [...list];
+    const findIndex = data[first.current];
+    data.splice(first.current, 1);
+    data.splice(second.current, 0, findIndex);
+    first.current = null;
+    second.current = null;
+    setList(data);
+  };
+  return (
+    <div>
+      {list.map((item, index) => (
+        <div
+          draggable
+          onDragStart={(e) => dragStart(e, index)}
+          onDragEnter={(e) => dragEnd(e, index)}
+          onDragEnd={drag}
+          style={{ background: "green", padding: "10px", margin: "20px" }}
+        >
+          {item}
         </div>
-    )
+      ))}
+    </div>
+  );
 }
 
-export default Main
+export default Main;
 
 // import React, { useState, useRef } from 'react'
 

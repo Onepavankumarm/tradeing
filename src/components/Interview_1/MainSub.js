@@ -1,56 +1,63 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function MainSub() {
-  const [list, setList] = useState(
-    [
-      {
-        Name: 'pavan',
-        id: 1
-      },
-      {
-        Name: 'Kumar',
-        id: 2
-      },
-      {
-        Name: 'M',
-        id: 3
-      }
-    ]
-  )
+  const [list, setList] = useState([
+    {
+      Name: "pavan",
+      id: 1,
+    },
+    {
+      Name: "kumar",
+      id: 2,
+    },
+    {
+      Name: "m",
+      id: 3,
+    },
+  ]);
   const upHandler = (id) => {
-
-    if (id - 1 !== -1) {
+    if (id !== 0) {
       let data = [...list];
-      [data[id - 1], data[id]] = [data[id], data[id - 1]]
-      setList(data)
+      [data[id], data[id - 1]] = [data[id - 1], data[id]];
+      setList(data);
     }
-  }
+  };
   const downHandler = (id) => {
-    console.log(list.length - 1 === id)
-    if (list.length - 1 !== id) {
+    if (id !== list.length - 1) {
       let data = [...list];
-      [data[id + 1], data[id]] = [data[id], data[id + 1]]
-      setList(data)
+      [data[id], data[id + 1]] = [data[id + 1], data[id]];
+      setList(data);
     }
-  }
+  };
   return (
-    <div >
-      <div>
-        {list.map((item, i) => {
-          return (
-            <div key={i} style={{ margin: '20px', display: 'flex', justifyContent: 'space-between', width: '300px', height: '50px', background: 'orange' }}>
-              {item.Name}
+    <div>
+      {list.map((item, i) => {
+        return (
+          <div
+            key={i}
+            style={{
+              background: "green",
+              margin: "20px",
+              padding: "10px",
+              dispaly: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <span style={{ color: "white" }}>{item.Name}</span>
+            <span style={{ float: "right" }}>
               <button onClick={() => upHandler(i)}>Up</button>
+            </span>
+            <span style={{ float: "right" }}>
               <button onClick={() => downHandler(i)}>Down</button>
-            </div>
-          )
-        })}
-      </div>
+            </span>
+          </div>
+        );
+      })}
     </div>
-  )
+  );
 }
 
-export default MainSub
+export default MainSub;
 // import React, { useState } from 'react'
 
 // function MainSub() {

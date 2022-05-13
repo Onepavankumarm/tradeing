@@ -1,4 +1,4 @@
-.row.content {
+/* .row.content {
   height: 550px;
 }
 .sidenav {
@@ -18,4 +18,36 @@
     height: auto;
   }
 }
-
+ */
+.main {
+  background-color: orange;
+  height: 500px;
+  padding: 30px;
+}
+.manSub {
+  display: flex;
+  height: 400px;
+  background-color: green;
+}
+.manSubone {
+  width: 40%;
+  background-color: aquamarine;
+  height: 200px;
+}
+.manSubTwo {
+  width: 60%;
+  background-color: lightcoral;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.mainmain {
+  width: 100%;
+}
+.manSubTwoSub {
+  padding: 30px;
+  margin: 30px;
+  float: left;
+  width: 40%;
+  background-color: aliceblue;
+}

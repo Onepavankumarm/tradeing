@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: center;
+ 
+}
+.mainSub {
+  width: 643px;
+  height: 643px;
+  background-color: green;
+  border: 1px solid green;
+}
+.white {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: table-cell;
+  float: left;
+}
+.black {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  display: table-cell;
+  float: left;
+}

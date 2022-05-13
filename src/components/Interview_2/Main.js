@@ -1,60 +1,71 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 function Main() {
-  const [data, setdata] = useState([
-    { id: 1, value: 0 },
-    { id: 2, value: 0 },
-    { id: 3, value: 0 }
-  ])
-  const [total, setTotal] = useState(0)
+  const [list, setlist] = useState([
+    {
+      value: 0,
+      id: 1,
+    },
+    {
+      value: 0,
+      id: 2,
+    },
+    {
+      value: 0,
+      id: 3,
+    },
+  ]);
+  const [total, settotal] = useState("");
   const increment = (id) => {
-    let newData = [...data];
-    if (newData[id].value !== -1) {
-      newData[id].value = newData[id].value + 1;
-      setdata(newData)
-    }
-    totalMaga()
-  }
+    let data = [...list];
+    console.log(data[id - 1]);
+    data[id - 1].value = data[id - 1].value + 1;
+    setlist(data);
+    totalCalculater();
+  };
   const decrement = (id) => {
-    let newData = [...data];
-    if (newData[id].value !== 0) {
-      newData[id].value = newData[id].value - 1;
-      setdata(newData)
+    let data = [...list];
+    if (data[id - 1].value !== 0) {
+      data[id - 1].value = data[id - 1].value - 1;
+      setlist(data);
+      totalCalculater();
     }
-    totalMaga()
-  }
-  const totalMaga = () => {
-    let list = data.map((item) => item.value).reduce((c, t) => c + t, 0);
-    setTotal(list)
-  }
+  };
+  const totalCalculater = () => {
+    let data = [...list];
+    let finaldata = data.map((item) => item.value).reduce((c, t) => c + t, 0);
+    settotal(finaldata);
+  };
   return (
-    <div style={{ textAlign: 'center' }}>
-      {
-        data.map((item, i) => {
-          return (
-            <div key={i}>{item.value} {'  '}<button onClick={() => increment(i)}>+</button>{'  '}<button onClick={() => decrement(i)}>-</button></div>
-          )
-        })
-      }
+    <div>
       <div>
-        <h1>Total:{total}</h1>
+        {list.map((item, i) => {
+          return (
+            <div key={i}>
+              <h1>{item.value}</h1>
+              <button onClick={() => increment(item.id)}>Increment</button>
+              <button onClick={() => decrement(item.id)}>Decrement</button>
+            </div>
+          );
+        })}
+        <div>{total}</div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
 // import React, { Component } from 'react'
 // import "./style.css";
 // export class Main extends Component {
-  // state = {
-  //   data: [
-  //     { id: 1, value: 0 },
-  //     { id: 2, value: 0 },
-  //     { id: 3, value: 0 }
-  //   ],
-  //   total: 0
-  // };
+// state = {
+//   data: [
+//     { id: 1, value: 0 },
+//     { id: 2, value: 0 },
+//     { id: 3, value: 0 }
+//   ],
+//   total: 0
+// };
 
 //   incressHandler = (id) => {
 //     let finaldata = [...this.state.data]

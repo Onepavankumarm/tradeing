@@ -1,0 +1,34 @@
+{
+  "folders": [
+	{
+		"path": "../../../.."
+	},
+	{
+		"path": "../../../../../../Documents/todos-START"
+	},
+	{
+		"path": "../../../../../react-hooks-dragndrop"
+	},
+	{
+		"path": "../../../../../my-learning"
+	},
+	{
+		"path": "../../../../../../Documents/react-typescript-demo"
+	},
+	{
+		"path": "../../../../../../Documents/learningsaga"
+	},
+	{
+		"path": "../../../../../../Documents/myscoot"
+	},
+	{
+		"path": "../../../../../8fcedd14-4a99-4efc-b8cc-f1b23a22d40b"
+	},
+	{
+		"path": "../../../../../a9cbff10-097d-4e0f-9def-3977d7c8e90f"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "tradeing"
+  }
+}

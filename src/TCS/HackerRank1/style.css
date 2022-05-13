@@ -1,0 +1,16 @@
+table{
+    background-color: aqua;
+}
+thead{
+    width: 100%;
+}
+tr{
+    border: 3px solid green;
+}
+th,td{
+    width: 10%;
+    border: 2px solid yellow;
+}
+.main{
+    margin: 100px;
+}

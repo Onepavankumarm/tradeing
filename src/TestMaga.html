@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testMaga</title>
+  </head>
+  <body>
+    <div id="parent">
+      <li id="Apple">Apple</li>
+      <li id="Ball">Ball</li>
+      <li id="Car">Car</li>
+    </div>
+    <script>
+      document.querySelector("#parent").addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+          window.location.href += "#" + e.target.id;
+        }
+      });
+    </script>
+  </body>
+</html>

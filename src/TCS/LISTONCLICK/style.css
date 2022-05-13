@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+}
+.sub1 {
+  width: 30%;
+  background-color: yellow;
+  height: 100vh;
+}
+.sub2 {
+  width: 70%;
+  background-color: green;
+  height: 100vh;
+}

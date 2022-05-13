@@ -22,11 +22,23 @@
   display: grid;
   place-items: center;
 }
-.chessBox {
+/* .mainbox {
+  width: 640px;
+  height: 640px;
+  background-color: aqua;
+}
+/* .white{
+  background-color: #fff;
+  height: 81px;
+  width: 81px;
+  display: table-cell;
+
+} */
+/* .chessBox {
   width: 640px;
   height: 640px;
   background-color: var(--secondary-color);
-}
+} 
 .white {
   background-color: #fff;
   display: table-cell;
@@ -42,4 +54,26 @@
   height: 80px;
   float: left;
   padding: 33px;
+} */
+
+.mainbox {
+  width: 640px;
+  height: 640px;
+  background-color: green;
+}
+.white {
+  width: 80px;
+  height: 80px;
+  display: table-cell;
+  float: left;
+  background-color: #fff;
+  padding: 33px;
+}
+.black {
+  padding: 33px;
+  width: 80px;
+  height: 80px;
+  display: table-cell;
+  float: left;
+  background-color: black;
 }
